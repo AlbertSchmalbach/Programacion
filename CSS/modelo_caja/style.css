@@ -1,0 +1,99 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+/* Selector de atributos */
+[data-type='primary' s] { /* Puede utilizar selectores de atributos que distingan entre mayúsculas y minúsculas si añade un operador s */
+  color: red;           /* Puede hacer lo opuesto (insensibilidad a mayúsculas y minúsculas) mediante el uso de un operador i */
+}
+
+/* [data-type] {
+  color: red;
+} */
+
+/* Un href que contiene "example.com" */
+[href*='example.com'] {
+  color: red;
+}
+
+/* Un href que comienza con https */
+[href^='https'] {
+  color: green;
+}
+
+/* Un href que termina con .com */
+[href$='.com'] {
+  color: blue;
+}
+
+/* Agrupar selectores */
+strong,
+em,
+.my-class,
+[lang] {
+  color: red;
+}
+
+
+/* Su lista ahora tendrá puntos rojos o números rojos */
+li::marker {
+  color: crimson;
+}
+
+::selection {
+  background: black;
+  color: white;
+}
+
+
+/* Especificidad */
+
+/* Selector de pseudoelementos -  10 puntos */
+::selection {
+  color: #aa465a;
+}
+
+/* Ejemplo con enlace (a) */
+
+
+.tendencias {
+  width: 600px;
+  background-color: ivory;
+  padding: 14px 16px;
+  margin-bottom: 15px;
+  border: 2px solid hsl(180deg, 20%, 50%);
+}
+
+.tendencias h2 {
+  color: color(srgb 0.72 .08 .25);
+  color: color(display-p3 0.9 0.2 0.4);
+  color: oklab(75% 0.1 0.1);
+  color: oklab(70% 25% 10%);
+  color: oklch(65% 0.25 0);
+  color: color-mix(in srgb, darkcyan 35%, green 20%);
+  color: oklch(from oklch(62% 0.25 29) calc(l / 2) c 180);
+}
+
+.tendencias p {
+  color:#2f4f4f;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.tendencias a{
+  display: inline-block;
+  color: oldlace;
+  text-decoration: none;
+  background: rgb(192 25 80);
+  font: inherit;
+  text-align: center;
+  padding: 1rem 2rem;
+}
+
+.tendencias a:hover{
+  background: rgb(192 25 80 / .5);
+}
+

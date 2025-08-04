@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+
+<style>
+    ul li {
+        list-style-type: none;
+    }
+</style>
+
+<body>
+    <form method="GET">
+        <label for="student">Pick a student:</label>
+        <select name="student" id="student">
+            <option value="hoover">Hoover Sukhdeep</option>
+            <option>Blendan Smooth</option>
+            <option value="toasty">Toasty McToastface</option>
+        </select>
+        <input type="submit" value="Submit Form">
+    </form>
+
+    <fieldset>
+        <legend>Cual es tu chica favorita?</legend>
+        <ul>
+            <li>
+                <label>
+                    <input type="radio" value="blendan" name="machine"> Luz Saray
+                    </label>
+            </li>
+            <li>
+                <label>
+                    <input type="radio" value="hoover" name="machine"> Misuris Paola
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="radio" value="toasty" name="machine"> Nazly
+                </label>
+            </li>
+        </ul>
+    </fieldset>
+
+    <fieldset>
+        <legend>Cual es tu chica favorita?</legend>
+        <ul>
+            <li>
+                <label>
+                    <input type="checkbox" value="blendan" name="machine"> Luz Saray
+                    </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox" value="hoover" name="machine"> Misuris Paola
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox" value="toasty" name="machine"> Nazly
+                </label>
+            </li>
+        </ul>
+    </fieldset>
+</body>
+
+</html>

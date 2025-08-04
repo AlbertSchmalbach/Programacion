@@ -1,0 +1,9 @@
+2025-05-22 13:43:52 - Usuario: KHAdmin - Movido: English_Maduro.mp4 -> C:/Users/KHAdmin/Documents/Confidencial/Albert/Archivos/Script_Python/Automatiza_Python/archivos\Videos\2025-04\English_Maduro.mp4
+2025-05-22 13:43:52 - Usuario: KHAdmin - Movido: Luz_Saray.jpg -> C:/Users/KHAdmin/Documents/Confidencial/Albert/Archivos/Script_Python/Automatiza_Python/archivos\Img\2025-02\Luz_Saray.jpg
+2025-05-22 13:43:52 - Usuario: KHAdmin - Movido: Luz_Saray.png -> C:/Users/KHAdmin/Documents/Confidencial/Albert/Archivos/Script_Python/Automatiza_Python/archivos\Img\2025-05\Luz_Saray.png
+2025-05-22 13:43:52 - Usuario: KHAdmin - Movido: prueba.docx -> C:/Users/KHAdmin/Documents/Confidencial/Albert/Archivos/Script_Python/Automatiza_Python/archivos\Word\2023-11\prueba.docx
+2025-05-22 13:43:52 - Usuario: KHAdmin - Movido: prueba.pdf -> C:/Users/KHAdmin/Documents/Confidencial/Albert/Archivos/Script_Python/Automatiza_Python/archivos\PDF\2023-12\prueba.pdf
+2025-05-22 13:43:52 - Usuario: KHAdmin - Movido: prueba.txt -> C:/Users/KHAdmin/Documents/Confidencial/Albert/Archivos/Script_Python/Automatiza_Python/archivos\TXT\2024-02\prueba.txt
+2025-05-22 13:43:52 - Usuario: KHAdmin - Movido: prueba.xlsx -> C:/Users/KHAdmin/Documents/Confidencial/Albert/Archivos/Script_Python/Automatiza_Python/archivos\Excel\2024-09\prueba.xlsx
+2025-05-22 13:44:04 - Usuario: KHAdmin - Movido: dates.png -> C:/Users/KHAdmin/Documents/Confidencial/Albert/Archivos/Script_Python/Automatiza_Python/archivos\Img\2025-05\dates.png
+2025-05-22 13:44:04 - Usuario: KHAdmin - Movido: Curso de Python. Excepciones III. Vídeo 23.mp4 -> C:/Users/KHAdmin/Documents/Confidencial/Albert/Archivos/Script_Python/Automatiza_Python/archivos\Videos\2025-05\Curso de Python. Excepciones III. Vídeo 23.mp4

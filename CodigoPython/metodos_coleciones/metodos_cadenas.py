@@ -1,0 +1,20 @@
+texto = 'programando en python 2024'
+numero = 7
+
+print(texto.upper())
+print(texto.lower())
+print(texto.capitalize())
+print(texto.title())
+print(texto.count('python'))
+print(texto.find('python'))
+print(texto.rfind('python'))
+print(texto.isdigit())
+print(texto.isalnum())
+print(texto.islower())
+print(texto.isupper())
+print(texto.istitle())
+print(texto.isspace())
+print(texto.startswith('programando'))
+print(texto.endswith('python'))
+print(texto.split()[2])
+print(texto.strip())

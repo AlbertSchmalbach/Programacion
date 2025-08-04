@@ -1,0 +1,31 @@
+Instructivo de Uso - Optimizador de PC
+
+1. Introducción
+El Optimizador de PC es un programa diseñado para mejorar el rendimiento del sistema eliminando archivos temporales, vaciando la papelera de reciclaje y reorganizando archivos en un directorio específico. Este programa es ideal para usuarios de Windows.
+
+2. Requisitos
+- Sistema operativo: Windows 10 o superior.
+- Permisos de administrador para ejecutar el programa correctamente.
+- No requiere instalación de Python ni dependencias adicionales.
+
+3. Instalación y Ejecución
+1. Descargue el archivo ejecutable 'optimizador_pc.exe'.
+2. Guarde el archivo en un lugar accesible de su computadora, como el escritorio.
+3. Haga doble clic en el archivo para ejecutarlo.
+4. Cuando aparezca la ventana de Control de Cuentas de Usuario (UAC), haga clic en 'Sí' para otorgar permisos de administrador.
+
+4. Uso del Programa
+Al ejecutar el programa, se mostrará un menú con las siguientes opciones:
+1. Eliminar archivos temporales: Limpia los archivos temporales del sistema.
+2. Vaciar papelera de reciclaje: Borra permanentemente los archivos en la papelera.
+3. Reorganizar archivos: Clasifica archivos por extensión en un directorio específico.
+4. Salir: Finaliza el programa.
+Seleccione la opción deseada ingresando el número correspondiente.
+
+5. Notas Importantes
+- Si el programa no tiene permisos de administrador, no podrá realizar ciertas tareas.
+- Asegúrese de confiar en el archivo antes de ejecutarlo, ya que algunos antivirus pueden marcarlo como sospechoso debido a su naturaleza.
+- Siempre ejecute el programa como administrador para garantizar su funcionamiento óptimo.
+
+6. Contacto y Soporte
+Si tiene problemas o preguntas sobre el programa, contacte al desarrollador a través de su correo electrónico beto21048@gmail.com o canal de soporte técnico.

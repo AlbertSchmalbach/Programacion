@@ -1,0 +1,9 @@
+setup.py
+matematicos/Estadisticos.py
+matematicos/__init__.py
+matematicos/modulos_aritmeticos.py
+matematicos/modulos_estadisticos.py
+matematicos.egg-info/PKG-INFO
+matematicos.egg-info/SOURCES.txt
+matematicos.egg-info/dependency_links.txt
+matematicos.egg-info/top_level.txt

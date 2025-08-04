@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de Práctica para Web Scraping</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Página de Práctica para Web Scraping</h1>
+    <p>¡Usa esta página para practicar tus habilidades de web scraping!</p>
+  </header>
+
+  <main>
+    <!-- Lista de enlaces -->
+    <section>
+      <h2>Enlaces Útiles</h2>
+      <ul>
+        <li><a href="https://example.com" target="_blank">Enlace a Example</a></li>
+        <li><a href="https://www.wikipedia.org" target="_blank">Enlace a Wikipedia</a></li>
+        <li><a href="https://www.python.org" target="_blank">Enlace a Python</a></li>
+      </ul>
+    </section>
+
+    <!-- Tabla con datos -->
+    <section>
+      <h2>Datos de Productos</h2>
+      <table border="1">
+        <thead>
+          <tr class="encabezados">
+            <th>Producto</th>
+            <th>Precio</th>
+            <th>Stock</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="filas">
+            <td class="titulo">Manzana</td>
+            <td class="precio">$1200</td>
+            <td class="estado">Disponible</td>
+          </tr>
+          <tr class="filas">
+            <td class="titulo">Plátano</td>
+            <td class="precio">$700</td>
+            <td class="estado">No disponible</td>
+          </tr>
+          <tr class="filas">
+            <td class="titulo">Pera</td>
+            <td class="precio">$1350</td>
+            <td class="estado">Disponible</td>
+          </tr>
+
+          <tr class="filas">
+            <td class="titulo">Sandia</td>
+            <td class="precio">$12000</td>
+            <td class="estado">Disponible</td>
+          </tr>
+
+          <tr class="filas">
+            <td class="titulo">Uva</td>
+            <td class="precio">$6500</td>
+            <td class="estado">Disponible</td>
+          </tr>
+
+          <tr class="filas">
+            <td class="titulo">Naranja</td>
+            <td class="precio">$300</td>
+            <td class="estado">Disponible</td>
+          </tr>
+
+          <tr class="filas">
+            <td class="titulo">Durazno</td>
+            <td class="precio">$1500</td>
+            <td class="estado">Disponible</td>
+          </tr>
+
+          <tr class="filas">
+            <td class="titulo">Piña</td>
+            <td class="precio">$2500</td>
+            <td class="estado">Disponible</td>
+          </tr>
+
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Lista de imágenes -->
+    <section>
+      <h2>Galería de Imágenes</h2>
+      <img src="manzana.webp" alt="Imagen de ejemplo 1">
+      <img src="banano.jpeg" alt="Imagen de ejemplo 2">
+      <img src="pera.webp" alt="Imagen de ejemplo 3">
+      <img src="sandia.jpeg" alt="Imagen de ejemplo 2">
+      <img src="uva.webp" alt="Imagen de ejemplo 3">
+      <img src="naranja.webp" alt="Imagen de ejemplo 3">
+      <img src="durazno.webp" alt="Imagen de ejemplo 2">
+      <img src="piña.webp" alt="Imagen de ejemplo 3">
+    </section>
+  </main>
+
+  <footer>
+    <p>Creado por Alberto para prácticas de web scraping.</p>
+  </footer>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>

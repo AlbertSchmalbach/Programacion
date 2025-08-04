@@ -1,0 +1,44 @@
+{
+    "https://security.ine.com/": [
+        {
+            "app": "CloudFlare",
+            "ver": null,
+            "type": "CDN"
+        },
+        {
+            "app": "WordPress",
+            "ver": null,
+            "type": "CMS,Blogs"
+        },
+        {
+            "app": "jQuery",
+            "ver": "3.7.0",
+            "type": "JavaScript Libraries"
+        },
+        {
+            "app": "jQuery",
+            "ver": "3.4.1",
+            "type": "JavaScript Libraries"
+        },
+        {
+            "app": "jQuery Migrate",
+            "ver": "\\2",
+            "type": "JavaScript Libraries"
+        },
+        {
+            "app": "Google Tag Manager",
+            "ver": null,
+            "type": "Tag Managers"
+        },
+        {
+            "app": "MySQL",
+            "ver": null,
+            "type": "Databases"
+        },
+        {
+            "app": "PHP",
+            "ver": null,
+            "type": "Programming Languages"
+        }
+    ]
+}

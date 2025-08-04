@@ -1,0 +1,25 @@
+numeros = set()
+numeros.add(2)
+numeros.add(5)
+numeros.add(7)
+numeros.add(10)
+numeros.discard(1)
+numeros2 = numeros.copy()
+numeros2.discard(5)
+numeros2.clear()
+numeros2 = {2, 7, 12, 15}
+print(numeros.isdisjoint(numeros2))
+print(numeros.issubset(numeros2))
+print(numeros.issuperset(numeros2))
+union_numeros = numeros.union(numeros2)
+numeros.update(numeros2)
+print(numeros)
+print(numeros2)
+print(union_numeros)
+print(numeros.difference(numeros2))
+print(numeros.difference_update(numeros2))
+print(numeros.intersection(numeros2))
+print(numeros.symmetric_difference(numeros2))
+
+
+

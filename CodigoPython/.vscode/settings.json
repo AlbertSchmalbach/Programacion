@@ -1,0 +1,22 @@
+{
+    "jupyter.kernels.filter": [],
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.autopep8"
+    },
+    "python.formatting.provider": "none",
+    "cSpell.words": [
+        "calcular",
+        "cantidad",
+        "datos",
+        "Ejemplo",
+        "Estadisticas",
+        "mediana",
+        "mitad",
+        "nombre",
+        "ordenados",
+        "promedio",
+        "prueba"
+    ],
+    "python.analysis.autoImportCompletions": true,
+    "python.defaultInterpreterPath": "C:\\Users\\KHAdmin\\AppData\\Local\\Programs\\Python\\Python313\\python.exe"
+}

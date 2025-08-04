@@ -1,0 +1,5 @@
+[2025-01-07 11:05:17] - Reorganizar archivos: No se pudo reorganizar los archivos: 'str' object has no attribute 'exists'
+[2025-01-07 11:07:39] - Reorganizar archivos: Archivos reorganizados por extensión.
+[2025-01-07 11:08:25] - Crear punto de restauración: No se pudo crear el punto de restauración: winmgmts:.Win32_SystemRestore
+[2025-01-07 11:17:51] - Crear punto de restauración: No se pudo crear el punto de restauración: (-2147352567, 'Ocurrió una excepción.', (0, 'SWbemObjectEx', 'Parámetro no válido ', None, 0, -2147217400), None)
+[2025-01-07 11:22:13] - Crear punto de restauración: No se pudo crear el punto de restauración: (-2147352567, 'Ocurrió una excepción.', (0, 'SWbemObjectEx', 'Parámetro no válido ', None, 0, -2147217400), None)

@@ -1,0 +1,11 @@
+utilizaremos el siguiente comando allí donde tenemos el setup.py:
+
+python setup.py sdist
+
+Para instalar un paquete en Python desde el directorio donde tenemos el paquete comprimido:
+
+pip install paquete-0.1.zip
+
+Finalmente utilizando el comando pip uninstall para desinstalarlo:
+
+pip uninstall paquete
