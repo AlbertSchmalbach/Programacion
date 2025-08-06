@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video HTML</title>
+
+</head>
+
+<body>
+
+    <h2>Horses</h2>
+
+    <video src="video/horse.mp4" poster="img/horse.jpg" controls>
+        <p>Mira <a href="https://www.youtube.com/shorts/QK0wfpuD8fI?feature=share">video en Youtube</a> </p>
+    </video>
+
+    <video controls poster="images/machine.jpg">
+        <source src="videos/machines.webm" type="video/webm">
+        <source src="videos/machines.mp4" type="video/mp4">
+        <source src="videos/machines.ogv" type="video/ogg">
+        <track label="English" kind="subtitles" srclang="en" src="vtt/subtitles-en.vtt" default />
+        <track label="Francais" kind="subtitles" srclang="fr" src="vtt/subtitles-fr.vtt" />
+        <p>Watch <a href="https://youtube.com/link">video on Youtube</a></p>
+    </video>
+
+    <video playsinline autoplay loop muted poster="images/machine.jpg" role="none">
+        <source src="videos/machines.webm" type="video/webm">
+        <source src="videos/machines.mp4" type="video/mp4">
+        <source src="videos/machines.ogv" type="video/ogg">
+    </video>
+
+</body>
+
+</html>
