@@ -1,3 +1,0 @@
-Alberto Schmalbach
-Programador
-Lenguajes = [HTML, CSS, JS, JAVA, PYTHON, PHP]
