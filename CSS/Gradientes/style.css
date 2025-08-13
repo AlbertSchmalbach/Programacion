@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.background{
+    height: 607px;
+    background-color: #aacfca;
+    background-image: linear-gradient(rgba(244, 226, 135, 0.507), rgba(35, 45, 56, 0.507)), url("/CSS/images/img3.png");
+    background-size: cover;
+    background-position: center;
+    padding: .1px;
+    display: grid;
+    place-content: center;
+}
+
+h2 {
+    color: #232d38;
+    font-size: 100px;
+}
