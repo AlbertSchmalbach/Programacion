@@ -56,14 +56,22 @@ m3 = np.array([[12], [4], [9], [8]])
 
 m4 = np.array(range(1,13)).reshape(3, 4) # cambiar su forma mediante la función np.reshape()
 
-print(m1)
-print()
-print(m2)
-print()
-print(m3)
-print()
-print(m4)
+# print(m1)
+# print()
+# print(m2)
+# print()
+# print(m3)
+# print()
+# print(m4)
 
+# Persistiendo arrays
 
+# 1 forma
+np.save('mi_matriz', M)
+# 2 forma
+np.savetxt('Mi_Matriz.csv', M)
 
+# Cargar datos devuelta en narray
+M_reloaded = np.loadtxt('Mi_Matriz.csv')
 
+print(M_reloaded)

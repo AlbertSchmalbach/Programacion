@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Lato", sans-serif;
+    background-color: darkslateblue;
+}
+
+header{
+    color: #fff;
+    text-align: center;
+    letter-spacing: 12px;
+    padding: 14px;
+}
+
+main {
+    width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px 10px;
+    margin: 0 auto;
+}
+
+section {
+    background-color: #F0FFFF;
+    width: 400px;
+    /* background-color: yellow; */
+    padding: 16px;
+    border: 2px solid black;
+    
+}
+
+section h3 {
+    color: crimson;
+    margin: 12px;
+}
+
+section h4{
+    color: #008B8B;
+}
+
+article p {
+    font-style: italic;
+    margin: 12px;
+}
+
+article pre{
+    background-color: #f1f1e2;
+    padding: 12px;
+    border: 1px solid grey;
+    margin-top: 20px;
+    overflow-wrap: break-word;
+}

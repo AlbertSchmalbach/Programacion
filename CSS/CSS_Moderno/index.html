@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Moderno</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <h1>CSS Moderno</h1>
+    </header>
+
+    <main>
+      <section>
+        <h3>1. Combinador :is()</h3>
+
+        <article>
+          <h4>Agrupación de selectores</h4>
+
+          <p>Antes</p>
+
+          <pre>
+        .container .item,
+        .container .parent,
+        .container .element {
+            /* ... */
+        }
+        </pre
+          >
+
+          <p>Ahora</p>
+
+          <pre>
+        .container :is(.item, .parent, .element){
+            /* ... */
+        }
+        </pre
+          >
+        </article>
+      </section>
+
+      <section>
+        <h3>2. Color RGB</h3>
+
+        <article>
+          <h4>Escribir colores</h4>
+          <p>Antes</p>
+
+          <pre>
+        .container {
+            background: rgba(255, 255, 0, 0.5);
+        }
+        </pre
+          >
+
+          <p>Ahora</p>
+
+          <pre>
+        .container {
+            background: rgb(100% 100% 0 / 50%);
+        }
+
+        </pre
+          >
+        </article>
+      </section>
+
+      <section>
+        <h3>3. Nesting CSS</h3>
+
+        <article>
+          <h4>Anidar código CSS</h4>
+          <p>Antes</p>
+
+          <pre>
+        .parent {
+            background: grey;
+        }
+
+        .parent .element {
+            background: darkred;
+        }
+
+        .parent .element:hover {
+            background: red;
+        }
+
+    </pre
+          >
+
+          <p>Ahora</p>
+
+          <pre>
+        .parent {
+            background: grey;
+
+            & .element {
+                background: darkred;
+
+                &:hover {
+                    background: red;
+                }
+            }
+        }
+
+    </pre
+          >
+        </article>
+      </section>
+
+      <section>
+        <h3>4. Centrado CSS</h3>
+
+        <article>
+          <h4>Centrar el contenido de un elemento</h4>
+          <p>Antes</p>
+
+          <pre>
+        .parent {
+            display: grid;
+            justify-items: center;
+            align-items: center;
+        }
+    </pre
+          >
+
+          <p>Ahora</p>
+
+          <pre>
+        .parent {
+            display: grid;
+            place-items: center;
+        }
+    </pre
+          >
+        </article>
+      </section>
+
+      <section>
+        <h3>5. Variables CSS</h3>
+
+        <article>
+          <h4>Reutilizar información</h4>
+          <p>Antes</p>
+
+          <pre>
+        .parent {
+            width: 300px;
+            height: 300px;
+            background: grey;
+        }
+    </pre
+          >
+
+          <p>Ahora</p>
+
+          <pre>
+        .parent {
+            --size: 300px;
+
+            width: var(--size);
+            height: var(--size);
+            background: var(--color, grey);
+        }
+    </pre
+          >
+        </article>
+      </section>
+
+      <section>
+        <h3>6. Media Queries</h3>
+
+        <article>
+          <h4>Sintaxis flexible de rangos</h4>
+          <p>Antes</p>
+
+          <pre>
+        @media (min-width: 800px) and
+               (max-width: 1280px) {
+        .menu {
+            background: red;
+            }
+        }
+    </pre
+          >
+
+          <p>Ahora</p>
+
+        <pre>
+        @media(800px &lt;= width &lt;= 1280px) {
+            .menu {
+                background: red;
+            }
+        }
+    </pre>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
