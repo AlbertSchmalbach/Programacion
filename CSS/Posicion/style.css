@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{ font-family: Arial, Helvetica, sans-serif;}
+
+.container {
+    width: 90%;
+    height: 500px;
+    border: 2px solid #000;
+    margin: 80px auto;
+}
+
+.position {
+    width: 150px;
+    height: 100px;
+    font-size: 1.3rem;
+    line-height: 100px;
+    text-align: center;
+}
+
+.static{
+    background-color: blueviolet;
+}
+
+.relative {
+    background-color: chartreuse;
+    position: relative;
+    /* top: 100px; */
+    left: 500px;
+    bottom: -100px;
+}
+
+.absolute {
+    background-color: deeppink;
+}
+
+.fixed{
+    background-color: yellow;
+}

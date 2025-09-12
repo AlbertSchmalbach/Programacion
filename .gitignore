@@ -1,2 +1,10 @@
-archivoIgnorado.txt
+# Ignorar todos los archivos situados directamente en la raíz del repositorio
+# (archivos que NO están dentro de carpetas)
+/*
+
+# No ignorar directorios de primer nivel (sus contenidos seguirán siendo visibles)
+!/*/
+
+# Mantener la configuración previa para carpetas/entradas específicas
+# (si quieres seguir ignorando la carpeta .vscode, descomenta la línea siguiente)
 .vscode/

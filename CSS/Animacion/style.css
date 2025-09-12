@@ -1,0 +1,132 @@
+.nombre {
+    background: linear-gradient(90deg, #15cc15, #ff4b7d, #2196f3, #ffeb3b, #15cc15);
+    background-size: 400% 400%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* display inline-block ayuda a que el clip se aplique correctamente */
+    display: inline-block;
+    animation: color-move 12s infinite alternate ease-in-out;
+}
+
+@keyframes color-move {
+    0%   { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+.heart-bubble {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%, 0);
+    opacity: 0.8;
+    animation: heart-bubble-rise 5s infinite linear;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Varias burbujas con diferentes posiciones, delays y escalas */
+.heart-bubble.b1 {
+    left: 30%;
+    animation-delay: 0s;
+    transform: translate(-50%, 0) scale(1);
+}
+.heart-bubble.b2 {
+    left: 40%;
+    animation-delay: 1s;
+    transform: translate(-50%, 0) scale(0.8);
+}
+.heart-bubble.b3 {
+    left: 60%;
+    animation-delay: 2s;
+    transform: translate(-50%, 0) scale(1.2);
+}
+.heart-bubble.b4 {
+    left: 70%;
+    animation-delay: 0.5s;
+    transform: translate(-50%, 0) scale(0.9);
+}
+.heart-bubble.b5 {
+    left: 80%;
+    animation-delay: 1.5s;
+    transform: translate(-50%, 0) scale(1.1);
+}
+
+.heart-bubble::before,
+.heart-bubble::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 32px;
+    background: #ff4b7d;
+    border-radius: 20px 20px 0 0;
+}
+
+.heart-bubble::before {
+    left: 0;
+    top: 8px;
+    transform: rotate(-45deg);
+}
+
+.heart-bubble::after {
+    right: 0;
+    top: 8px;
+    transform: rotate(45deg);
+}
+
+@keyframes heart-bubble-rise {
+    0% {
+        opacity: 0.8;
+        transform: translate(-50%, 0) scale(1);
+    }
+    70% {
+        opacity: 1;
+        transform: translate(-50%, -200px) scale(1.2);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -300px) scale(0.8);
+    }
+}
+.nombre {
+    position: absolute;
+    left: 0;
+    top: 50px;
+    font-size: 67px; /* Fuente más grande */
+    font-weight: bold;
+    color: #15cc15;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    animation: rebote-horizontal-vertical 8s infinite alternate ease-in-out;
+}
+
+@keyframes rebote-horizontal-vertical {
+    0% {
+        left: 0;
+        top: 50px;
+        transform: rotate(-5deg);
+    }
+    10% {
+        transform: rotate(0deg);
+    }
+    25% {
+        top: 0px;
+    }
+    50% {
+        left: calc(100vw - 300px); /* Ajusta 300px al ancho de tu nombre */
+        top: 100px;
+        transform: rotate(5deg);
+    }
+    75% {
+        top: 0px;
+    }
+    90% {
+        transform: rotate(0deg);
+    }
+    100% {
+        left: 0;
+        top: 50px;
+        transform: rotate(-5deg);
+    }
+}

@@ -1,0 +1,281 @@
+{
+    "type": "MySQLNotebook",
+    "version": "1.0",
+    "caption": "Script",
+    "content": "USE mundial_fifa_2018;\n\nINSERT INTO confederaciones (Nombre) VALUES\n('UEFA'),\n('CONMEBOL'),\n('CONCACAF'),\n('AFC'),\n('CAF');\n\nINSERT INTO Equipo (Pais, Abreviatura, Grupo, ID_Confederaciones) VALUES\n('Brasil', 'BRA', 'E', 2),\n('Alemania', 'GER', 'F', 1),\n('Argentina', 'ARG', 'D', 2),\n('México', 'MEX', 'F', 3),\n('Japón', 'JPN', 'H', 4);\n\nINSERT INTO Club (Nombre, Pais) VALUES\n('FC Barcelona', 'España'),\n('Bayern Múnich', 'Alemania'),\n('Boca Juniors', 'Argentina'),\n('América', 'México'),\n('Kashima Antlers', 'Japón');\n\nINSERT INTO Jugador (Nombre, Posicion, Edad, ID_Equipo, ID_Club) VALUES\n('Neymar Jr', 'Delantero', 26, 1, 1),\n('Toni Kroos', 'Centrocampista', 28, 2, 2),\n('Lionel Messi', 'Delantero', 31, 3, 1),\n('Hirving Lozano', 'Delantero', 23, 4, 4),\n('Shinji Kagawa', 'Centrocampista', 29, 5, 5);\n\nINSERT INTO Partido (Fecha, Estadio, Ciudad, Ronda) VALUES\n('2018-06-17', 'Luzhnikí', 'Moscú', 'Fase de grupos'),\n('2018-06-27', 'Kazán Arena', 'Kazán', 'Fase de grupos'),\n('2018-06-30', 'Kazan Arena', 'Kazán', 'Octavos de final'),\n('2018-07-02', 'Samara Arena', 'Samara', 'Octavos de final'),\n('2018-07-15', 'Luzhnikí', 'Moscú', 'Final');\n\nINSERT INTO Equipo_Partido (ID_Equipo, ID_Partido, Es_Local, Goles) VALUES\n(1, 1, 'Local', 1),   -- Brasil vs Alemania\n(2, 1, 'Visitante', 2),\n(3, 2, 'Local', 2),   -- Argentina vs México\n(4, 2, 'Visitante', 1),\n(5, 3, 'Local', 2),   -- Japón vs Brasil\n(1, 3, 'Visitante', 3),\n(2, 4, 'Local', 1),   -- Alemania vs México\n(4, 4, 'Visitante', 2),\n(3, 5, 'Local', 1),   -- Argentina vs Alemania (Final)\n(2, 5, 'Visitante', 0);\n\nSELECT * FROM Confederaciones;\nSELECT * FROM equipo;\nSELECT * FROM jugador;\nSELECT * FROM club;\nSELECT * FROM partido;\n\nSELECT Equipo.Pais, Equipo.Abreviatura, Equipo.Grupo, Confederaciones.Nombre AS Confederacion\nFROM Equipo \nJOIN Confederaciones ON Equipo.ID_Confederaciones = Confederaciones.ID_Confederaciones;\n",
+    "options": {
+        "tabSize": 4,
+        "indentSize": 4,
+        "insertSpaces": true,
+        "defaultEOL": "LF",
+        "trimAutoWhitespace": true
+    },
+    "viewState": null,
+    "contexts": [
+        {
+            "state": {
+                "start": 1,
+                "end": 59,
+                "language": "mysql",
+                "result": {
+                    "type": "resultIds",
+                    "list": [
+                        "b86251c9-10dd-4447-8954-1dbebec50124"
+                    ]
+                },
+                "currentHeight": 300,
+                "currentSet": 1,
+                "statements": [
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 0,
+                            "length": 22
+                        },
+                        "contentStart": 0,
+                        "state": 0
+                    },
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 22,
+                            "length": 101
+                        },
+                        "contentStart": 24,
+                        "state": 0
+                    },
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 123,
+                            "length": 213
+                        },
+                        "contentStart": 125,
+                        "state": 0
+                    },
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 336,
+                            "length": 183
+                        },
+                        "contentStart": 338,
+                        "state": 0
+                    },
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 519,
+                            "length": 286
+                        },
+                        "contentStart": 521,
+                        "state": 0
+                    },
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 805,
+                            "length": 341
+                        },
+                        "contentStart": 807,
+                        "state": 0
+                    },
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 1146,
+                            "length": 425
+                        },
+                        "contentStart": 1148,
+                        "state": 0
+                    },
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 1571,
+                            "length": 32
+                        },
+                        "contentStart": 1573,
+                        "state": 0
+                    },
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 1603,
+                            "length": 22
+                        },
+                        "contentStart": 1604,
+                        "state": 0
+                    },
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 1625,
+                            "length": 23
+                        },
+                        "contentStart": 1626,
+                        "state": 0
+                    },
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 1648,
+                            "length": 20
+                        },
+                        "contentStart": 1649,
+                        "state": 0
+                    },
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 1668,
+                            "length": 23
+                        },
+                        "contentStart": 1669,
+                        "state": 0
+                    },
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 1691,
+                            "length": 196
+                        },
+                        "contentStart": 1693,
+                        "state": 0
+                    },
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 1887,
+                            "length": 1
+                        },
+                        "contentStart": 1886,
+                        "state": 3
+                    }
+                ]
+            },
+            "data": [
+                {
+                    "tabId": "7898e14d-12ec-4f28-bb1f-3a986729b482",
+                    "resultId": "b86251c9-10dd-4447-8954-1dbebec50124",
+                    "rows": [
+                        {
+                            "0": "Brasil",
+                            "1": "BRA",
+                            "2": "E",
+                            "3": "CONMEBOL"
+                        },
+                        {
+                            "0": "Alemania",
+                            "1": "GER",
+                            "2": "F",
+                            "3": "UEFA"
+                        },
+                        {
+                            "0": "Argentina",
+                            "1": "ARG",
+                            "2": "D",
+                            "3": "CONMEBOL"
+                        },
+                        {
+                            "0": "México",
+                            "1": "MEX",
+                            "2": "F",
+                            "3": "CONCACAF"
+                        },
+                        {
+                            "0": "Japón",
+                            "1": "JPN",
+                            "2": "H",
+                            "3": "AFC"
+                        }
+                    ],
+                    "columns": [
+                        {
+                            "title": "Pais",
+                            "field": "0",
+                            "dataType": {
+                                "type": 17,
+                                "characterMaximumLength": 65535,
+                                "flags": [
+                                    "BINARY",
+                                    "ASCII",
+                                    "UNICODE"
+                                ],
+                                "needsQuotes": true,
+                                "parameterFormatType": "OneOrZero"
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false
+                        },
+                        {
+                            "title": "Abreviatura",
+                            "field": "1",
+                            "dataType": {
+                                "type": 17,
+                                "characterMaximumLength": 65535,
+                                "flags": [
+                                    "BINARY",
+                                    "ASCII",
+                                    "UNICODE"
+                                ],
+                                "needsQuotes": true,
+                                "parameterFormatType": "OneOrZero"
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false
+                        },
+                        {
+                            "title": "Grupo",
+                            "field": "2",
+                            "dataType": {
+                                "type": 17,
+                                "characterMaximumLength": 65535,
+                                "flags": [
+                                    "BINARY",
+                                    "ASCII",
+                                    "UNICODE"
+                                ],
+                                "needsQuotes": true,
+                                "parameterFormatType": "OneOrZero"
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false
+                        },
+                        {
+                            "title": "Confederacion",
+                            "field": "3",
+                            "dataType": {
+                                "type": 17,
+                                "characterMaximumLength": 65535,
+                                "flags": [
+                                    "BINARY",
+                                    "ASCII",
+                                    "UNICODE"
+                                ],
+                                "needsQuotes": true,
+                                "parameterFormatType": "OneOrZero"
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false
+                        }
+                    ],
+                    "executionInfo": {
+                        "text": "OK, 5 records retrieved in 1.348ms"
+                    },
+                    "totalRowCount": 5,
+                    "hasMoreRows": false,
+                    "currentPage": 0,
+                    "index": 0,
+                    "sql": "\n\nSELECT Equipo.Pais, Equipo.Abreviatura, Equipo.Grupo, Confederaciones.Nombre AS Confederacion\nFROM Equipo \nJOIN Confederaciones ON Equipo.ID_Confederaciones = Confederaciones.ID_Confederaciones;",
+                    "updatable": false,
+                    "fullTableName": ""
+                }
+            ]
+        }
+    ]
+}
