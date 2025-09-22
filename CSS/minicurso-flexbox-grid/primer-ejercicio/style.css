@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.row{
+    display: flex;
+    flex-flow: row nowrap;
+    max-width: 900px;
+}
+
+img{
+    width: 200px;
+}
+
+.item{
+    text-align: center;
+    width: 300px;
+}

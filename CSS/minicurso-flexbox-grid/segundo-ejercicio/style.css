@@ -1,0 +1,45 @@
+.card {
+  background-color: azure;
+  border-radius: 10px;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 10%), 0 4px 6px -2px rgb(0 0 0 / 5%);
+  height: 100px;
+}
+
+.card,
+.copy {
+  min-width: 50%;
+  width: 50%;
+}
+
+.row {
+  display: flex;
+  height: 100vh;
+  background-color: slateblue;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.copy {
+  padding-right: 1em;
+  padding-left: 1em;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 600px) {
+  .row {
+
+    flex-direction: column;
+
+  }
+
+  .card,
+  .copy {
+    width: 80%;
+  }
+
+  .copy.first {
+    order: 1;
+  }
+
+}
