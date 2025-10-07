@@ -19,6 +19,8 @@
 
     echo "El precio de la laptop es $ {$laptop['Dell']} pesos";
 
+
+    // Array multidimensionales
     $programador = array(
         "programador1" => array(
             "nombre" => "Alberto",

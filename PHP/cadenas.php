@@ -29,7 +29,7 @@
     // Eliminar espacio
     echo trim(" Hello name");
     echo "\n";
-    // Cadena en matrid
+    // Cadena en matriz
     print_r (explode(" ", $text));
     // Concatenación de cadenas (.)
     $x = "Hello";
