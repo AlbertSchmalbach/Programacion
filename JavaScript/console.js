@@ -40,4 +40,6 @@ for (let i = 0; i < 10; i++) {
 }
 console.timeEnd("test1");
 
+const numero = +"42"
 
+console.log(typeof numero)

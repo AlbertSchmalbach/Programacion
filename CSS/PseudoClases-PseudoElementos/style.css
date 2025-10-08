@@ -1,0 +1,28 @@
+input:focus {
+    outline: 2px solid #FF8C00;
+    background-color: #F0E68C;
+}
+
+li:first-child {
+    color: #fff;
+    background-color: crimson;
+    font-weight: bold;
+}
+
+li:last-child {
+    color: #fff;
+    background-color: purple;
+    font-weight: bold;
+}
+
+.comillas::before {
+    content: '"';
+    color: slateblue;
+    font-size: 20px;
+}
+
+.comillas::after {
+    content: '"';
+    color: slateblue;
+    font-size: 20px;
+}

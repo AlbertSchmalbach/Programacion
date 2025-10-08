@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas ul, ol, menu</title>
+    <style>
+        menu{
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+
+            & li{
+                list-style-type: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Listas</h1>
+
+    <h2>Listas sin orden</h2>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <h2>Listas ordenadas</h2>
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+
+    <h2>Menu</h2>
+    <menu>
+        <li><button>Seleccionar</button></li>
+        <li><button>Copiar</button></li>
+        <li><button>Pegar</button></li>
+    </menu>
+</body>
+</html>
