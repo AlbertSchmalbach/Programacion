@@ -10,14 +10,14 @@ body{ font-family: Arial, Helvetica, sans-serif;}
     height: 500px;
     line-height: 2;
     border: 2px solid #000;
-    padding: 16px;
+    padding: 8px;
     margin: 80px auto;
     position: relative;
 }
 
 .position {
     width: 150px;
-    height: 100px;
+    height: 80px;
     font-size: 1.3rem;
     line-height: 100px;
     text-align: center;
@@ -29,36 +29,42 @@ body{ font-family: Arial, Helvetica, sans-serif;}
 
 .relative {
     background-color: chartreuse;
-    position: relative;
+    /* position: relative; */
     /* top: 100px; */
     /* left: 500px;
     bottom: -100px; */
-    z-index: 30;
+    /* z-index: 30; */
 }
 
 .absolute {
     background-color: deeppink;
-    position: absolute;
-    /* top: 0;
-    right: 0; */
-    z-index: 10;
+    /* position: absolute;
+    top: 100px;
+    right: 200px; */
+    /* z-index: 10; */
 }
 
 .fixed{
     background-color: yellow;
-    position: fixed;
-    top: 150px;
-    left: 450px;
-    z-index: 20;
+    /* position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 20; */
 }
 
 .sticky{
     display: grid;
     font-weight: bold;
     place-content: center;
-    width: 200px;
-    height: 150px;
+    /* width: 200px; */
+    /* height: 150px; */
     background-color: tomato;
-    position: sticky;
-    top: 30px;
+    /* position: sticky;
+    top: 10px;
+    left: 100px; */
+}
+
+.scroll{
+    background-color: purple;
+    overflow-y: scroll;
 }
