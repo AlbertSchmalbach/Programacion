@@ -1,3 +1,5 @@
 Nuevo archivo de conflicto desde VS CODE.
 
+Cambios desde dev.
+
 Cambios desde mi rama main
