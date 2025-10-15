@@ -1,3 +1,6 @@
 Linea de archivo
 
+<<<<<<< HEAD
 segundo cambio desde main.
+Cambios desde la rama dev
+
