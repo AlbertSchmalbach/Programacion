@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mas Input</title>
+</head>
+<body>
+    <form action="#" method="post">
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="user@dom.com" required>
+        </div>
+        <div>
+            <label for="passwd">Contraseña:</label>
+            <input type="password" name="password" id="passwd" minlength="8" required>
+        </div>
+
+        <div>
+            <label for="edad">Edad:</label>
+            <input type="number" name="edad" id="edad" min="18" max="18">
+        </div>
+
+        <div>
+            <label for="fecha">Fecha</label>
+            <input type="date" name="fecha" id="fecha" min="2024-01-01" max="2025-12-31">
+        </div>
+
+        <div>
+            <label for="tel">Telefono:</label>
+            <input type="tel" name="tel" id="tel" placeholder="311 111 1111" pattern="[0-9]{10}">
+        </div>
+
+        <div>
+            <label for="color">Color:</label>
+            <input type="color" name="color" id="color">
+        </div>
+
+        <fieldset>
+            <legend>Genero</legend>
+            <input type="radio" name="genero" id="masc" value="M">
+            <label for="masc">Masculino</label>
+
+            <input type="radio" name="genero" id="fem" value="F">
+            <label for="fem">Femenino</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Lenguajes</legend>
+            <input type="checkbox" name="Lenguajes" id="cpp">
+            <label for="cpp">C++</label>
+
+            <input type="checkbox" name="Lenguajes" id="py">
+            <label for="py">Python</label>
+
+            <input type="checkbox" name="Lenguajes" id="js">
+            <label for="js">JavaScript</label>
+
+            <input type="checkbox" name="Lenguajes" id="java">
+            <label for="java">Java</label>
+
+            <input type="checkbox" name="Lenguajes" id="php">
+            <label for="php">PHP</label>
+        </fieldset>
+
+        <div>
+            <label for="pais">Pais:</label>
+            <select name="Pais" id="pais">
+                <option value="mexico">Mexico</option>
+                <option value="colombia">Colombia</option>
+                <option value="argentina">Argentina</option>
+            </select>
+        </div>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
