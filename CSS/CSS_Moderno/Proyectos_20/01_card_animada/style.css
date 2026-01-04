@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    padding: 80px 0;
+    display: grid;
+    justify-content: center;
+}
+
+.card {
+    width: 300px;
+    display: grid;
+    grid-template-rows: 150px 1fr;
+    position: relative;
+    cursor: pointer;
+
+    color: white;
+    background-color: #4B0082;
+    box-shadow: 0 0 6px rgb(0 0 0 / 5);
+    padding: 1rem;
+    overflow: hidden;
+
+    /* CORRECCIÓN: variable con dos guiones */
+    --columns: 1fr max-content 1fr;
+    --clyppy-image: circle(0% at top right);
+    --transform: unset;
+    --opacity: 0;
+}
+
+.card:hover {
+    --clyppy-image: circle(60% at top right);
+    --transform: scale(.65) translateY(-20px);
+
+    /* CORRECCIÓN aquí también */
+    --columns: 0fr max-content 1fr;
+    --opacity: 1;
+}
+
+.card__figure {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80%;
+    aspect-ratio: 1/1;
+
+    clip-path: var(--clyppy-image);
+    transition: clip-path 0.8s;
+}
+
+.card__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.card__name {
+    position: absolute;
+    inset: 0;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: var(--columns);
+    grid-template-areas: ". title .";
+    place-items: center;
+    transition: grid-template-columns 0.8s;
+}
+
+.card__title {
+    font-size: 2.5rem;
+    transform-origin: left;
+    transform: var(--transform);
+    grid-area: title;
+    transition: transform .8s;
+}
+
+.card__text {
+    opacity: 1;
+    z-index: 1;
+    grid-row: 2 / 3;
+    opacity: var(--opacity);
+    transition: opacity .5s;
+    padding-top: 20px;
+}

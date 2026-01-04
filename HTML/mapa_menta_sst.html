@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Plantilla Mapa Mental — Planes y Acciones (Medio Ambiente y SST)</title>
+    <style>
+      :root{ --bg:#ffffff; --accent:#0b1226; --green:#2e9a4b; --orange:#f39c12 }
+      body{margin:0;font-family:Segoe UI,Arial,Helvetica,sans-serif;background:var(--bg);color:var(--accent);padding:20px}
+      .container{max-width:980px;margin:0 auto}
+      h1{font-size:18px;margin:0 0 8px}
+      p.lead{margin:0 0 16px;color:#334}
+
+      /* Visible plantilla lista para copiar */
+      pre.template{background:#f6f8fb;border:1px solid #edf1f7;padding:12px;border-radius:8px;white-space:pre-wrap}
+
+      /* Simple mapa visual (SVG) */
+      .map-wrap{margin-top:18px;background:#fff;border:1px solid #eef4fb;padding:14px;border-radius:10px}
+      svg{width:100%;height:420px}
+      .center{fill:#fefefe;stroke:#0b1226;stroke-width:2}
+      .branch-rect{fill:#fff;stroke-width:2}
+      .text-main{font-weight:700;font-size:14px}
+      .text-sub{font-weight:600;font-size:13px}
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Plantilla simple — Mapa Mental</h1>
+      <p class="lead">Copia la lista y pégala en tu herramienta o usa la plantilla SVG abajo para armar el mapa visualmente.</p>
+
+      <!-- Lista para copiar y armar -->
+      <pre class="template">Centro:
+🌎🦺 Planes y Acciones en Medio Ambiente y SST
+
+Ramas principales:
+
+🌿 Medio Ambiente
+  - Planes
+  - Acciones
+  - Indicadores
+  - Referencias
+
+🦺 SST
+  - Planes
+  - Acciones
+  - Indicadores
+  - Referencias
+</pre>
+
+      <!-- Plantilla visual sencilla en SVG -->
+      <div class="map-wrap" role="img" aria-label="Mapa mental simple: Centro y dos ramas con cuatro subelementos cada una">
+        <svg viewBox="0 0 1000 520" xmlns="http://www.w3.org/2000/svg" aria-hidden="false">
+          <!-- Centro -->
+          <g transform="translate(500,120)">
+            <circle class="center" r="64" />
+            <text text-anchor="middle" y="-4" class="text-main">🌎🦺</text>
+            <text text-anchor="middle" y="16" class="text-sub">Planes y Acciones</text>
+            <text text-anchor="middle" y="34" class="text-sub">Medio Ambiente • SST</text>
+          </g>
+
+          <!-- Izquierda: Medio Ambiente -->
+          <g transform="translate(180,260)">
+            <rect class="branch-rect" x="-100" y="-60" width="200" height="120" rx="10" fill="#f7fffa" stroke="var(--green)"/>
+            <text text-anchor="middle" y="-30" class="text-main" fill="var(--green)">🌿 Medio Ambiente</text>
+            <text x="0" y="-4" class="text-sub">• Planes</text>
+            <text x="0" y="18" class="text-sub">• Acciones</text>
+            <text x="0" y="40" class="text-sub">• Indicadores</text>
+            <text x="0" y="62" class="text-sub">• Referencias</text>
+            <!-- simple connector -->
+            <line x1="220" y1="-110" x2="100" y2="-40" stroke="#cfeee0" stroke-width="4" stroke-linecap="round"/>
+          </g>
+
+          <!-- Derecha: SST -->
+          <g transform="translate(820,260)">
+            <rect class="branch-rect" x="-100" y="-60" width="200" height="120" rx="10" fill="#fff9f3" stroke="var(--orange)"/>
+            <text text-anchor="middle" y="-30" class="text-main" fill="var(--orange)">🦺 SST</text>
+            <text x="0" y="-4" class="text-sub">• Planes</text>
+            <text x="0" y="18" class="text-sub">• Acciones</text>
+            <text x="0" y="40" class="text-sub">• Indicadores</text>
+            <text x="0" y="62" class="text-sub">• Referencias</text>
+            <!-- connector -->
+            <line x1="-220" y1="-110" x2="-100" y2="-40" stroke="#ffeecd" stroke-width="4" stroke-linecap="round"/>
+          </g>
+
+          <!-- connectors to center (visual only) -->
+          <line x1="420" y1="160" x2="320" y2="120" stroke="#cfeee0" stroke-width="3" stroke-linecap="round"/>
+          <line x1="580" y1="160" x2="680" y2="120" stroke="#ffeecd" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+      </div>
+
+      <p style="margin-top:12px;color:#445;font-size:13px">Sugerencia: copia el bloque de la <strong>lista</strong> para generar tu contenido y luego adapta el SVG si quieres cambiar textos o colores.</p>
+    </div>
+  </body>
+</html>
