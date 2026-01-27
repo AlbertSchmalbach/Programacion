@@ -4,10 +4,10 @@
 a = Analysis(
     ['decifrar_contrasena_qr.py'],
     pathex=[],
-    binaries=[],
+    binaries=[('C:\\Users\\OESTE\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\pyzbar\\libiconv.dll', 'pyzbar'), ('C:\\Users\\OESTE\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\pyzbar\\libzbar-64.dll', 'pyzbar')],
     datas=[],
     hiddenimports=[],
-    hookspath=['.'],
+    hookspath=[],
     hooksconfig={},
     runtime_hooks=[],
     excludes=[],

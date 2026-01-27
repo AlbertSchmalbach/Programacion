@@ -1,23 +1,20 @@
-// funcion simple
-function saludar() {
-    console.log("Saludar des Javascript");
-    
+// funciones declarativa
+
+function numeroAleatorio(min, max) {
+  return Math.floor(Math.random() * (max - min)) + min;
 }
 
-saludar();
-
-// Declaración de la función con parametro
-function tablaMultiplicar(n=1) {
-  for (let i = 0; i <= 10; i++) console.log(n + " * "+ i, "="+ n * i );
+// funciones expresada
+const numAzar = function(min, max) {
+  return Math.floor(Math.random() * (max - min)) + min;
 }
 
-// ejecutar funcion tablaMultiplicar
-tablaMultiplicar(7);
+let numeroAzar = numeroAleatorio(1,20);
 
-// Con 2 parametros
-function suma(a,b) {
-    return a + b;
-}
+console.log(numeroAzar);
+console.log(numAzar(100,200));
 
-console.log(suma(40, 23));
+// funciones flecha
+const numAzarFlecha = (min, max) => Math.floor(Math.random() * (max - min)) + min;
 
+console.log(numAzarFlecha(1000, 2000));

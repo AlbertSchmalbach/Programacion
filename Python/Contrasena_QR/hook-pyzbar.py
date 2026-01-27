@@ -1,5 +1,5 @@
-# Hook for PyInstaller to collect dynamic libraries from pyzbar
-from PyInstaller.utils.hooks import collect_dynamic_libs
+from PyInstaller.utils.hooks import collect_dynamic_libs, collect_data_files
 
-# Collect all dynamic libraries bundled with pyzbar (e.g. libiconv.dll, libzbar.dll)
+# Ensure PyInstaller includes pyzbar's compiled extensions and any bundled DLLs/data
 binaries = collect_dynamic_libs('pyzbar')
+datas = collect_data_files('pyzbar')
